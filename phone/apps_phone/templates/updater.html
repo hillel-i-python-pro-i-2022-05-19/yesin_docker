@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for el in data %}
+        <p><a href='{{ el.contact_name }}'>Имя: {{ el.contact_name }},   Номер телефона: {{ el.phone_value }}</a></p>
+    {% endfor %}
+    <button><a href="{% url 'main_page' %}">Главная</a></button>
+
+{% endblock %}

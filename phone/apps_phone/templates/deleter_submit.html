@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <br>Вы уверены, что хотите удалить контакт?</br>
+    {% url 'contactdeleter_final' name as del_url %}
+    <input type="submit" value="ДА" onclick="location.href='{{ del_url }}'">
+    <button><a href="{% url 'main_page' %}">Главная</a></button>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <title>Добавление нового контакта</title>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button>Добавить</button>
+    </form>
+    <button><a href="{% url 'main_page' %}">Главная</a></button>
+
+{% endblock %}

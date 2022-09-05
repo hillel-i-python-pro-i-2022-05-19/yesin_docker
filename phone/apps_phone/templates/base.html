@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" content="text/html">
+    <title>Python</title>
+</head>
+<body>
+<h1>Homework 14</h1>
+<ul type="circle">
+    <li><a href= "{% url 'main_page' %}">Главная</a></li><hr>
+    <li><a href="{% url 'contactcreator' %}">Добавить новый контакт</a></li><hr>
+    <li><a href= "{% url 'contactreader' %}">Показать контакты</a></li><hr>
+    <li><a href= "{% url 'contactupdater_temp' %}">Изменить контакт</a></li><hr>
+    <li><a href= "{% url 'contactdeleter_temp' %}">Удалить контакт</a></li><hr>
+</ul>
+
+{% block content %} {% endblock %}
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>Контакт с таким именем или номером телефона уже существует</p>
+    <button><a href= "{% url 'contactcreator' %}">Добавить ещё один контакт</a></button>
+    <button><a href="{% url 'main_page' %}">Главная</a></button>
+
+{% endblock %}
+

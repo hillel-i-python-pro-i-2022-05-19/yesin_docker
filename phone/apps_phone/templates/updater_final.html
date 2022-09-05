@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <title>Изменить контакт</title>
+    <form method="post">
+        {% csrf_token %}
+        {{ form }}
+        <button>Обновить</button>
+    </form>
+    <button><a href="{% url 'main_page' %}">Главная</a></button>
+
+{% endblock %}

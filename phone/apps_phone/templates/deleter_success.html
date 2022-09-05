@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <p>Контакт успешно удалён</p>
+    <button><a href= "{% url 'contactdeleter_temp' %}">Удалить ещё один контакт</a></button>
+    <button><a href="{% url 'main_page' %}">Главная</a></button>
+
+{% endblock %}
